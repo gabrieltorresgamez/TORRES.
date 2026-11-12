@@ -12,9 +12,11 @@
   .sel { fill: var(--selection); }
   .ground { fill: var(--canvas); }
   .r { rx: var(--radius); ry: var(--radius); }
-  .glyph { font: 700 400px/1 var(--font-display); }
+  .glyph { font: 700 520px/1 var(--font-display); }
   .text { position: absolute; left: 40px; bottom: 36px; max-width: 440px; }
-  .name { margin: 0; font: 700 120px/0.92 var(--font-display); letter-spacing: -0.025em; color: var(--ink); }
+  /* The name set as the Wordmark: uppercase Bricolage 700, ink, the full stop in accent. */
+  .name { margin: 0; font: 700 104px/0.92 var(--font-display); letter-spacing: -0.01em; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
+  .name .dot { color: var(--accent); }
   .tag { margin: 12px 0 0; font: 400 0.8125rem/1.45 var(--font-sans); color: var(--ink-muted); }
 </style>
 </head>
@@ -25,16 +27,16 @@
       blocks: accent slab 300 wide, bleeding off top and bottom; ink 160x140 bleeding off the right edge; selection 120x80. Sides in steps of space-5 (20px), corners radius (12px).
       arrangement: one tall orange slab with two satellites to its right, space-5 apart, from x = 500.
       pattern: one oversized glyph, chosen because every Torres mark is an uppercase letter cut out of an orange square: a Bricolage 700 "T" in the ground colour, cut out of the slab and cropped by it.
-      steps and radii: gaps space-5 (20px), block corners radius (12px), glyph in the display face at 400px, its stem cut off by the slab's bottom edge.
+      steps and radii: gaps space-5 (20px), block corners radius (12px), glyph in the display face at 520px, its crossbar cut off by the slab's right edge and its stem by the bottom edge.
     -->
     <defs><clipPath id="slab"><rect x="500" y="-12" width="300" height="312" rx="12"/></clipPath></defs>
     <rect class="accent r" x="500" y="-12" width="300" height="312"/>
-    <text class="glyph ground" x="548" y="376" clip-path="url(#slab)">T</text>
+    <text class="glyph ground" x="566" y="412" clip-path="url(#slab)">T</text>
     <rect class="ink r" x="820" y="24" width="160" height="140"/>
     <rect class="sel r" x="820" y="184" width="120" height="80"/>
   </svg>
   <div class="text">
-    <h1 class="name">Torres</h1>
+    <h1 class="name">Torres<span class="dot">.</span></h1>
     <p class="tag">Coffee and cream, one electric orange.</p>
   </div>
 </div>

@@ -94,9 +94,9 @@
     "Icons"
   ],
   "lastChange": {
-    "at": "2026-11-12T18:35:00Z",
+    "at": "2026-11-12T20:15:00Z",
     "by": "Gabriel Torres Gamez",
-    "note": "Back to the goal: removed the Chart and Slide components and the Vega-Lite configs; the chart rule is three lines; the slide preview is static, built from the slide sizes.",
+    "note": "The system is called TORRES., set like the Wordmark on the cover; the guide still writes Torres in running text.",
     "via": "Claude"
   },
   "layout": "files",
@@ -114,5 +114,5 @@
   ],
   "namespace": "Torres",
   "sections": {},
-  "title": "Torres"
+  "title": "TORRES."
 }

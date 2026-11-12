@@ -1,4 +1,7 @@
-# Torres
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/readme/cover-dark.png">
+  <img alt="TORRES. Coffee and cream, one electric orange." src=".github/readme/cover-light.png">
+</picture>
 
 Torres is Gabriel Torres Gamez's design language: one look for all of his sites, and the kit for anything new: a site, a presentation, a document. Warm coffee and cream neutrals, one electric orange, Bricolage Grotesque headings over the reader's own system font, flat surfaces, 12px and 6px corners.
 
@@ -232,6 +235,7 @@ A snapshot of the Torres design system. Torres is edited in its design system on
 | `fonts/` | Bricolage Grotesque Variable (woff2), for the web. |
 | `downloads/fonts/` | Bricolage Grotesque SemiBold and Bold, for Keynote and PowerPoint. |
 | `design-system.json` | The design system's own index (asset records, libraries), kept so the system can be restored from this copy. |
+| `.github/readme/` | The cover above, rendered from `components/Cover/preview.html` in the light and dark themes. |
 
 ## License
 

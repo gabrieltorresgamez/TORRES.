@@ -1,4 +1,4 @@
-/* Torres — generated from tokens.json */
+/* TORRES. — generated from tokens.json */
 :root, [data-theme="light"] {
   --accent: #ff4f00; /* Electric Orange, the one accent. Fills, focus rings, the caret, the wordmark's full stop, large numerals and hover underlines. In light it is for large text (24px and up) and fills only; body-size text takes the Burnt Orange text colour. High contrast: Rust in light, Light Orange in dark, safe at any size. */
   --on-accent: #201515; /* Text and icons on an `accent` fill: the primary button, the current item in a sidebar or list. Coffee on Electric Orange; in high contrast, cream on Rust and Terminal Ground on Light Orange. Never cream on Electric Orange. */
