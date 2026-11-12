@@ -1,0 +1,23 @@
+<!-- @dsCard group="Text" height=280 subtitle="Links in running text: rest, hover, focus" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html { background: var(--canvas); }
+  body { margin: 0; padding: var(--space-6); color: var(--ink); font: 400 1.125rem/1.6 var(--font-sans); }
+  .cap { color: var(--ink-muted); font: 400 0.9375rem/1.45 var(--font-sans); }
+  .states { display: flex; flex-wrap: wrap; gap: var(--space-8); align-items: flex-start; }
+  .state { display: grid; gap: var(--space-2); justify-items: start; }
+  p { margin: 0 0 var(--space-6); max-width: 40rem; text-wrap: pretty; }
+</style></head><body>
+<div id="root"></div>
+<script>
+var h = React.createElement, T = window.Torres;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h("div", null,
+  h("p", null, "Readers also follow the ", h(T.Link, null, "RSS feed"), ", and every post stays readable at its ", h(T.Link, null, "current URL"), "."),
+  h("div", { className: "states" },
+    h("div", { className: "state" }, h(T.Link, null, "RSS feed"), h("span", { className: "cap" }, "Rest: 1px underline")),
+    h("div", { className: "state" }, h(T.Link, { state: "hover" }, "RSS feed"), h("span", { className: "cap" }, "Hover: 2px underline")),
+    h("div", { className: "state" }, h(T.Link, { state: "focus" }, "RSS feed"), h("span", { className: "cap" }, "Focus: 2px accent ring, 3px out"))))
+);
+</script>
+</body></html>

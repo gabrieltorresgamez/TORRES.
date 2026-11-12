@@ -1,0 +1,118 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Icons": {
+      "files": {
+        "document-dark.svg": {
+          "blob": "52fa0fc57183b9cdaf1b41021e5d1fde",
+          "name": "document-dark.svg",
+          "size": 347,
+          "type": "image/svg+xml"
+        },
+        "document-light.svg": {
+          "blob": "ef0cc2692607c06dbeb6d67da430a4f1",
+          "name": "document-light.svg",
+          "size": 347,
+          "type": "image/svg+xml"
+        },
+        "folder-dark.svg": {
+          "blob": "62eea8d2a170cfb5e72ebf4b96e2a227",
+          "name": "folder-dark.svg",
+          "size": 276,
+          "type": "image/svg+xml"
+        },
+        "folder-light.svg": {
+          "blob": "1c7900d938dcce4849b900d96dd88b4f",
+          "name": "folder-light.svg",
+          "size": 276,
+          "type": "image/svg+xml"
+        },
+        "terminal-dark.svg": {
+          "blob": "307d2209c3e34f6cd8b48a7d114f19be",
+          "name": "terminal-dark.svg",
+          "size": 330,
+          "type": "image/svg+xml"
+        },
+        "terminal-light.svg": {
+          "blob": "742e3955fb05f4c76ed1af09d1865078",
+          "name": "terminal-light.svg",
+          "size": 294,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "Icons",
+      "order": [
+        "document-light.svg",
+        "folder-light.svg",
+        "terminal-light.svg",
+        "document-dark.svg",
+        "folder-dark.svg",
+        "terminal-dark.svg"
+      ],
+      "tile": "s"
+    },
+    "Logos": {
+      "files": {
+        "arc-mark.svg": {
+          "blob": "f31b5a17ad50eb5a1e5f33d972cd81f0",
+          "name": "arc-mark.svg",
+          "size": 252,
+          "type": "image/svg+xml"
+        },
+        "fuet-mark.svg": {
+          "blob": "4999732c27ad63dc486e01e5d2b75402",
+          "name": "fuet-mark.svg",
+          "size": 193,
+          "type": "image/svg+xml"
+        },
+        "torres-mark.svg": {
+          "blob": "cf241feb23d0942ea8e93cd7e4013255",
+          "name": "torres-mark.svg",
+          "size": 188,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "Logos",
+      "order": [
+        "fuet-mark.svg",
+        "arc-mark.svg",
+        "torres-mark.svg"
+      ]
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-11-12T14:57:00Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [
+    "Logos",
+    "Icons"
+  ],
+  "lastChange": {
+    "at": "2026-11-12T18:35:00Z",
+    "by": "Gabriel Torres Gamez",
+    "note": "Back to the goal: removed the Chart and Slide components and the Vega-Lite configs; the chart rule is three lines; the slide preview is static, built from the slide sizes.",
+    "via": "Claude"
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "global": "React",
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "global": "ReactDOM",
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "Torres",
+  "sections": {},
+  "title": "Torres"
+}

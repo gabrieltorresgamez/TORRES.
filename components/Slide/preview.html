@@ -1,0 +1,39 @@
+<!-- @dsCard group="Presentations" height=980 page subtitle="Title, idea and content slides at the slide sizes (1920 × 1080, scaled to the card)" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>
+  html { background: var(--canvas); }
+  body { margin: 0; padding: var(--space-6); color: var(--ink); font: 400 1.125rem/1.6 var(--font-sans); }
+  .deck { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--space-6); }
+  .deck > :first-child { grid-column: 1 / -1; }
+  /* A slide is 1920 x 1080 units scaled to its width; every size is twice its web size. */
+  .frame { container-type: inline-size; }
+  .slide { --u: calc(100cqw / 1920); aspect-ratio: 16 / 9; box-sizing: border-box; padding: calc(128 * var(--u)); background: var(--canvas); outline: 1px solid var(--hairline); display: flex; flex-direction: column; overflow: hidden; }
+  .wordmark { font: 700 calc(40 * var(--u))/1 var(--font-display); letter-spacing: -0.01em; text-transform: uppercase; }
+  .wordmark b { font-weight: inherit; color: var(--accent); }
+  h1, h2 { margin: 0; font-family: var(--font-display); text-wrap: balance; }
+  .title { margin-top: auto; max-width: 14ch; font-size: calc(112 * var(--u)); font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; }
+  .meta { margin: calc(40 * var(--u)) 0 0; color: var(--ink-muted); font-size: calc(32 * var(--u)); }
+  .idea { max-width: 18ch; font-size: calc(112 * var(--u)); font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; }
+  .big { margin-top: auto; display: flex; align-items: baseline; gap: calc(40 * var(--u)); }
+  .num { font: 700 calc(192 * var(--u))/0.92 var(--font-display); letter-spacing: -0.03em; color: var(--accent); }
+  .big p, .body { margin: 0; max-width: 30ch; font-size: calc(36 * var(--u)); line-height: 1.6; text-wrap: pretty; }
+  .heading { margin-bottom: calc(40 * var(--u)); font-size: calc(56 * var(--u)); font-weight: 650; line-height: 1.2; letter-spacing: -0.01em; }
+  .body + .body { margin-top: calc(40 * var(--u)); }
+</style></head><body>
+<div class="deck">
+  <div class="frame"><section class="slide">
+    <span class="wordmark">Torres<b>.</b></span>
+    <h1 class="title">Uncovering Crypto Scams with Reddit Data</h1>
+    <p class="meta">Gabriel Torres Gamez</p>
+  </section></div>
+  <div class="frame"><section class="slide">
+    <h2 class="idea">Half of all comments come from r/CryptoCurrency.</h2>
+    <div class="big"><span class="num">54%</span><p>272,292 of 504,455 comments, across 32 subreddits and 12 coins.</p></div>
+  </section></div>
+  <div class="frame"><section class="slide">
+    <h2 class="heading">What I looked at</h2>
+    <p class="body">Every comment that names one of twelve coins, from 32 subreddits, over two years.</p>
+    <p class="body">One orange thing per slide; here there is none.</p>
+  </section></div>
+</div>
+</body></html>

@@ -1,0 +1,188 @@
+/* Torres — generated from tokens.json */
+:root, [data-theme="light"] {
+  --accent: #ff4f00; /* Electric Orange, the one accent. Fills, focus rings, the caret, the wordmark's full stop, large numerals and hover underlines. In light it is for large text (24px and up) and fills only; body-size text takes the Burnt Orange text colour. High contrast: Rust in light, Light Orange in dark, safe at any size. */
+  --on-accent: #201515; /* Text and icons on an `accent` fill: the primary button, the current item in a sidebar or list. Coffee on Electric Orange; in high contrast, cream on Rust and Terminal Ground on Light Orange. Never cream on Electric Orange. */
+  --link: #c2410c; /* Links in running text, always underlined, on `canvas`, `canvas-soft` and `surface-raised`. Burnt Orange in light, where Electric Orange is too pale for body-size text; Electric Orange in dark; Rust and Light Orange in high contrast. */
+  --ink: #201515; /* Body text, headings, nav links and list titles on `canvas`, `canvas-soft` and `surface-raised`. Coffee in light, cream in dark. */
+  --ink-muted: #605d52; /* Secondary text on `canvas`, `canvas-soft` and `surface-raised`: dates, authors, places, reading time, captions, list markers. Warm Grey in light, Sand in dark, a darker Warm Grey in high contrast light. */
+  --canvas: #fffefb; /* The page ground (elevation 0). Cream in light, coffee in dark, never black; the darkest coffee in high contrast dark. */
+  --canvas-soft: #f8f4f0; /* Panels in the flow of text (elevation 1): quotes, asides, code blocks, inline code. No border, the tone is enough, except in the high-contrast themes, where it gets a 1px `hairline` outline. */
+  --surface-raised: var(--canvas); /* The fill of anything that floats over the page (elevation 2 and 3): a window, menu or popover. The page ground in light, the panel tone in dark; always outlined. */
+  --hairline: #c5c0b1; /* Decorative 1px rules and dividers, and the outline of raised surfaces. Never the edge of a control. At least 3:1 in the high-contrast themes, so rules and outlines stay visible. */
+  --border: #8a877b; /* The edge of anything a visitor operates (a select, an input), scrollbar thumbs, axis lines and the outline of the front surface. At least 3:1 on `canvas` and `canvas-soft` in every theme. */
+  --selection: #ffe3d5; /* Text selection background. Selected text, links included, is set in `ink`. */
+  --chart-blue: #2f4f86; /* Charts only: the one series compared with the `accent` series. Denim in light and high contrast light, sky blue in dark and high contrast dark. Blue and orange stay apart for every common kind of colour blindness; at least 7:1 on `canvas`, `canvas-soft` and `surface-raised` in every theme. Never for text, fills or anything outside a chart. */
+  --elevation-2: 0 8px 20px -12px rgb(32 21 21 / 0.35); /* Raised, at rest: a window not in front, a menu, a popover. With a 1px `hairline` outline on `surface-raised`. */
+  --elevation-3: 0 22px 44px -14px rgb(32 21 21 / 0.4); /* Front: the one active window or surface. With a 1px `border` outline on `surface-raised`. */
+}
+[data-theme="dark"] {
+  --accent: #ff4f00;
+  --on-accent: #201515;
+  --link: #ff4f00;
+  --ink: #fffefb;
+  --ink-muted: #c5c0b1;
+  --canvas: #1a1210;
+  --canvas-soft: #241c19;
+  --surface-raised: var(--canvas-soft);
+  --hairline: #3a332d;
+  --border: #807d72;
+  --selection: #7c2d12;
+  --chart-blue: #7db5e3;
+  --elevation-2: 0 8px 20px -12px rgb(0 0 0 / 0.6);
+  --elevation-3: 0 22px 44px -14px rgb(0 0 0 / 0.8);
+}
+[data-theme="hc-light"] {
+  --accent: #7c2d12;
+  --on-accent: #fffefb;
+  --link: #7c2d12;
+  --ink: #201515;
+  --ink-muted: #4a4740;
+  --canvas: #fffefb;
+  --canvas-soft: #f8f4f0;
+  --surface-raised: var(--canvas);
+  --hairline: #807d72;
+  --border: #605d52;
+  --selection: #ffe3d5;
+  --chart-blue: #2f4f86;
+  --elevation-2: 0 8px 20px -12px rgb(32 21 21 / 0.35);
+  --elevation-3: 0 22px 44px -14px rgb(32 21 21 / 0.4);
+}
+[data-theme="hc-dark"] {
+  --accent: #ff8a50;
+  --on-accent: #120c0a;
+  --link: #ff8a50;
+  --ink: #fffefb;
+  --ink-muted: #c5c0b1;
+  --canvas: #120c0a;
+  --canvas-soft: #1a1210;
+  --surface-raised: var(--canvas-soft);
+  --hairline: #807d72;
+  --border: #a8a397;
+  --selection: #7c2d12;
+  --chart-blue: #7db5e3;
+  --elevation-2: 0 8px 20px -12px rgb(0 0 0 / 0.6);
+  --elevation-3: 0 22px 44px -14px rgb(0 0 0 / 0.8);
+}
+:root {
+  --space-2: 0.5rem; /* Tight gaps: between an icon and its label, between a caption and its image. */
+  --space-3: 0.75rem; /* Small gaps inside a component: between a heading and its meta line, between nav items on a phone, the padding of the white plate behind an imported diagram. */
+  --space-4: 1rem; /* Padding of a code block (with `space-5` at the sides) and of a masthead row. */
+  --space-5: 1.25rem; /* The default gap between blocks: stacked surfaces, nav links, items in a bulleted list; 1.25em between paragraphs in running text. */
+  --space-6: 1.5rem; /* Padding inside a window or any surface at elevation 2 or 3; the gap below an entry's divider. */
+  --space-8: 2rem; /* The page gutter at its widest (fluid: clamp(1.25rem, 5vw, 2rem)) and the gap between groups of content. */
+  --space-10: 2.5rem; /* Between items in a list, around a horizontal rule, and the padding of a footer. */
+  --space-12: 3rem; /* Between major sections of a page. */
+  --space-16: 4rem; /* The largest step: under a page heading at its widest, above a page footer. A slide's margin is twice this (128px). */
+  --panel-y: 1.1rem; /* Top and bottom padding of a quote or aside panel. Off the scale on purpose: an exact value from the sites. */
+  --panel-x: 1.4rem; /* Side padding of a quote or aside panel. */
+  --code-inline-y: 0.1em; /* Top and bottom padding of inline code; in em so it follows the text size. */
+  --code-inline-x: 0.3em; /* Side padding of inline code. */
+  --radius: 12px; /* Images, covers, panels, code blocks, windows, the primary button. */
+  --radius-sm: 6px; /* Controls, inline code, sidebar links, small icons and the focus ring. Nothing is fully round. */
+  --font-display: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+  --text-hero: 700 6rem/0.92 var(--font-display); /* The loudest voice: a name or title that owns the screen, on a landing page or a title slide. Fluid on the web, clamp(3rem, min(6.6vw, 10vh), 6rem), wrapping at about 8ch (12ch on a section slide, so a long German word fits). Once per page or slide, in `accent` or `ink`, on any ground. */
+  --text-display: 700 3.5rem/1.05 var(--font-display); /* The page or post title (h1) and a slide title. Fluid on the web: clamp(2.25rem, 7vw, 3.5rem). text-wrap: balance. */
+  --text-section: 650 1.75rem/1.2 var(--font-display); /* Second-level headings (h2) and the headline inside a window. */
+  --text-title: 600 1.375rem/1.25 var(--font-display); /* A title in a list of entries. Third-level headings (h3) use the same size at 650 with line height 1.2. */
+  --text-heading-sm: 600 1.125rem/1.3 var(--font-display); /* Small headings: h4, entry titles (a job, a project) and the previous/next links at the end of a page. */
+  --text-wordmark: 700 1.25rem/1 var(--font-display); /* A site's name in its masthead, always in uppercase: `ink`, with a final full stop in `accent` ("FUET."). Your own wordmark, where no single site speaks, is "TORRES.". 1.25rem in a masthead on every screen; on a slide, see the slide sizes. */
+  --text-body: 400 1.125rem/1.6 var(--font-sans); /* Running text: 18px at 1.6 in a column of about 70 characters. text-wrap: pretty. */
+  --text-excerpt: 400 1.0625rem/1.5 var(--font-sans); /* The excerpt under a list title, and short descriptions inside an entry. */
+  --text-meta: 400 1rem/1.6 var(--font-sans); /* Author and date lines, navigation, footer text, in `ink-muted`. */
+  --text-meta-small: 400 0.9375rem/1.45 var(--font-sans); /* Captions, the meta line in list rows, details summaries. */
+  --text-label: 500 0.8125rem/1.3 var(--font-sans); /* The smallest text: chart axis labels, legends and data labels, small UI labels. Set in `mono` for window titles and filenames. Never for running text. */
+  --text-code: 400 0.9em/1.5 var(--font-mono); /* Inline code and code blocks on `canvas-soft`; also filenames and anything that belongs to the machine. */
+}
+.hero {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  line-height: 0.92;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.display {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.section {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  line-height: 1.2;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+.title {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.heading-sm {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.excerpt {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.meta {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.meta-small {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+@font-face {
+  font-family: "Bricolage Grotesque Variable";
+  src: url("fonts/bricolage-grotesque-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,22 @@
+<!-- @dsCard group="Surfaces" height=280 subtitle="Quote, code block and inline code: elevation 1" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html { background: var(--canvas); }
+  body { margin: 0; padding: var(--space-6); color: var(--ink); font: 400 1.125rem/1.6 var(--font-sans); }
+  .cap { color: var(--ink-muted); font: 400 0.9375rem/1.45 var(--font-sans); }
+  .states { display: flex; flex-wrap: wrap; gap: var(--space-8); align-items: flex-start; }
+  .state { display: grid; gap: var(--space-2); justify-items: start; }
+  .col { max-width: 40rem; display: grid; gap: var(--space-5); }
+  .col > p { margin: 0; }
+</style></head><body>
+<div id="root"></div>
+<script>
+var h = React.createElement, T = window.Torres;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h("div", { className: "col" },
+  h(T.Panel, { kind: "quote", lang: "de" }, "Ein Blog, geschrieben f\u00fcr die Module DKO und LWK"),
+  h(T.Panel, { kind: "code" }, "FTX Token site:reddit.com/r/CryptoCurrency after:2019-08-01 before:2022-11-07"),
+  h("p", null, "Start the site with ", h(T.Panel.Code, null, "docker compose up -d"), " and open it in the browser."))
+);
+</script>
+</body></html>

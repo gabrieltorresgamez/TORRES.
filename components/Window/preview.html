@@ -1,0 +1,23 @@
+<!-- @dsCard group="Surfaces" height=400 subtitle="Floating surfaces: raised (elevation 2) behind, front (elevation 3)" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html { background: var(--canvas); }
+  body { margin: 0; padding: var(--space-6); color: var(--ink); font: 400 1.125rem/1.6 var(--font-sans); }
+  .cap { color: var(--ink-muted); font: 400 0.9375rem/1.45 var(--font-sans); }
+  .states { display: flex; flex-wrap: wrap; gap: var(--space-8); align-items: flex-start; }
+  .state { display: grid; gap: var(--space-2); justify-items: start; }
+  .desk { position: relative; max-width: 46rem; height: 350px; }
+  .desk > * { position: absolute; width: min(26rem, 64%); }
+  .back { top: 0; left: 0; }
+  .front { top: 100px; right: 0; }
+</style></head><body>
+<div id="root"></div>
+<script>
+var h = React.createElement, T = window.Torres;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h("div", { className: "desk" },
+  h(T.Window, { title: "work.md", className: "back" }, h("h2", null, "Work experience"), h("p", null, "Application Engineer for data and integration at UMB.")),
+  h(T.Window, { title: "about.md", front: true, className: "front" }, h("h2", null, "Hi, I'm Gabo."), h("p", null, "I'm a data scientist and software engineer from Z\u00fcrich.")))
+);
+</script>
+</body></html>
