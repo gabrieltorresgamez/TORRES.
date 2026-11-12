@@ -5,30 +5,33 @@
 <meta charset="utf-8">
 <style>
   html, body { margin: 0; background: var(--canvas); }
-  .cover { position: relative; height: 288px; overflow: hidden; background: var(--canvas); }
-  .cover svg { position: absolute; top: 0; right: 0; width: min(480px, 50%); height: 288px; }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--canvas); }
+  .cover svg { position: absolute; inset: 0; }
   .accent { fill: var(--accent); }
   .ink { fill: var(--ink); }
   .sel { fill: var(--selection); }
+  .ground { fill: var(--canvas); }
   .r { rx: var(--radius); ry: var(--radius); }
-  .stop { fill: var(--accent); font: 700 240px/1 var(--font-display); }
-  .text { position: absolute; left: 40px; bottom: 36px; max-width: calc(50% - 60px); }
-  .name { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(64px, 12.5vw, 120px); line-height: 0.92; letter-spacing: -0.025em; color: var(--ink); }
-  .tag { margin: 12px 0 0; font: 400 0.9375rem/1.45 var(--font-sans); color: var(--ink-muted); text-wrap: pretty; }
+  .glyph { font: 700 400px/1 var(--font-display); }
+  .text { position: absolute; left: 40px; bottom: 36px; max-width: 440px; }
+  .name { margin: 0; font: 700 120px/0.92 var(--font-display); letter-spacing: -0.025em; color: var(--ink); }
+  .tag { margin: 12px 0 0; font: 400 0.8125rem/1.45 var(--font-sans); color: var(--ink-muted); }
 </style>
 </head>
 <body>
 <div class="cover">
-  <svg viewBox="480 0 480 288" preserveAspectRatio="xMinYMid slice" aria-hidden="true">
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
     <!--
-      blocks: accent 200x240, ink 220x140, selection 120x80; sides in multiples of space-5 (1.25rem = 20px), corners radius (12px).
-      arrangement: one tall orange slab with three satellites to its right, 20px (space-5) apart; in a narrow card the right side is cropped, the slab stays.
-      the one orange thing beyond the slab: the wordmark's full stop, set as type on the ground in the last place, where it reads in every theme.
+      blocks: accent slab 300 wide, bleeding off top and bottom; ink 160x140 bleeding off the right edge; selection 120x80. Sides in steps of space-5 (20px), corners radius (12px).
+      arrangement: one tall orange slab with two satellites to its right, space-5 apart, from x = 500.
+      pattern: one oversized glyph, chosen because every Torres mark is an uppercase letter cut out of an orange square: a Bricolage 700 "T" in the ground colour, cut out of the slab and cropped by it.
+      steps and radii: gaps space-5 (20px), block corners radius (12px), glyph in the display face at 400px, its stem cut off by the slab's bottom edge.
     -->
-    <rect class="accent r" x="500" y="24" width="200" height="240"/>
-    <rect class="ink r" x="720" y="24" width="220" height="140"/>
-    <rect class="sel r" x="720" y="184" width="120" height="80"/>
-    <text class="stop" x="856" y="264">.</text>
+    <defs><clipPath id="slab"><rect x="500" y="-12" width="300" height="312" rx="12"/></clipPath></defs>
+    <rect class="accent r" x="500" y="-12" width="300" height="312"/>
+    <text class="glyph ground" x="548" y="376" clip-path="url(#slab)">T</text>
+    <rect class="ink r" x="820" y="24" width="160" height="140"/>
+    <rect class="sel r" x="820" y="184" width="120" height="80"/>
   </svg>
   <div class="text">
     <h1 class="name">Torres</h1>
