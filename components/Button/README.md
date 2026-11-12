@@ -2,7 +2,7 @@
 
 The one primary action on a page or slide: an `accent` fill with `on-accent` text.
 
-**Use** at most once per page or slide, for the action that matters most ("Connect on LinkedIn"). Every other action is a link. There is no secondary or ghost button in Torres.
+**Use** at most once per page or slide, for the action that matters most ("Connect on LinkedIn"). Every other action is a link. There is no secondary or ghost button in TORRES.
 
 **You provide** a short label that says what happens, in sentence case.
 

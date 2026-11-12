@@ -94,9 +94,9 @@
     "Icons"
   ],
   "lastChange": {
-    "at": "2026-11-12T20:15:00Z",
+    "at": "2026-11-12T20:20:00Z",
     "by": "Gabriel Torres Gamez",
-    "note": "The system is called TORRES., set like the Wordmark on the cover; the guide still writes Torres in running text.",
+    "note": "The name is written TORRES. everywhere, in running text too; the code namespace stays window.Torres.",
     "via": "Claude"
   },
   "layout": "files",

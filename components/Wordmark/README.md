@@ -1,6 +1,6 @@
 # Wordmark
 
-A site's name set in uppercase type, in `ink`, always ending in a full stop in `accent`; every Torres site and deck opens with one.
+A site's name set in uppercase type, in `ink`, always ending in a full stop in `accent`; every TORRES. site and deck opens with one.
 
 **Use** it once, top left of the masthead, linking home; on a title slide, top left at 40px, while the talk's title carries the slide. It is type, not an image: the square marks in Logos are for favicons and badges, not a replacement for it.
 

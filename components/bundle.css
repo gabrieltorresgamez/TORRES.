@@ -1,4 +1,4 @@
-/* Torres components. Colours, spacing, radii and fonts come from tokens.css. */
+/* TORRES. components. Colours, spacing, radii and fonts come from tokens.css. */
 
 ::selection { background: var(--selection); color: var(--ink); }
 

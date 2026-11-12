@@ -3,9 +3,9 @@
   <img alt="TORRES. Coffee and cream, one electric orange." src=".github/readme/cover-light.png">
 </picture>
 
-Torres is Gabriel Torres Gamez's design language: one look for all of his sites, and the kit for anything new: a site, a presentation, a document. Warm coffee and cream neutrals, one electric orange, Bricolage Grotesque headings over the reader's own system font, flat surfaces, 12px and 6px corners.
+TORRES. is Gabriel Torres Gamez's design language: one look for all of his sites, and the kit for anything new: a site, a presentation, a document. Warm coffee and cream neutrals, one electric orange, Bricolage Grotesque headings over the reader's own system font, flat surfaces, 12px and 6px corners.
 
-Every rule below states the one Torres way.
+Every rule below states the one TORRES. way.
 
 ## Content fundamentals
 
@@ -205,9 +205,9 @@ Everything above applies; these are the choices each kind of work adds.
 
 ## Terminal
 
-A terminal is the one place Torres allows colours beyond the accent, because it imitates a real terminal. Use them inside a terminal only, never on a page, a slide or a chart.
+A terminal is the one place TORRES. allows colours beyond the accent, because it imitates a real terminal. Use them inside a terminal only, never on a page, a slide or a chart.
 
-- **Surfaces and text are Torres colours:** the body is the darkest coffee, #120c0a (the `hc-dark` `canvas`); the title bar in front is #1a1210 (the `dark` `canvas`); the rule under it is #3a332d (the `dark` `hairline`); output is `ink` cream and echoed commands are `ink-muted` sand.
+- **Surfaces and text are TORRES. colours:** the body is the darkest coffee, #120c0a (the `hc-dark` `canvas`); the title bar in front is #1a1210 (the `dark` `canvas`); the rule under it is #3a332d (the `dark` `hairline`); output is `ink` cream and echoed commands are `ink-muted` sand.
 - **Orange** (`accent`) keeps its meaning: the prompt, the block caret, entry titles, errors and the ASCII logo; the focus ring and text selection inside the terminal are orange too.
 - **Three colours of its own, each with one meaning:**
 
@@ -224,7 +224,7 @@ A terminal is the one place Torres allows colours beyond the accent, because it 
 
 ## This repository
 
-A snapshot of the Torres design system. Torres is edited in its design system on Claude; this repository is a copy of it, refreshed from there.
+A snapshot of the TORRES. design system. TORRES. is edited in its design system on Claude; this repository is a copy of it, refreshed from there.
 
 | Path | What |
 | --- | --- |

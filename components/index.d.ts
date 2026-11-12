@@ -1,4 +1,4 @@
-// Torres components. Load tokens.css, components/bundle.css, React 18 and components/bundle.js;
+// TORRES. components. Load tokens.css, components/bundle.css, React 18 and components/bundle.js;
 // the components are on window.Torres.
 
 /** Preview-only: show a state at rest. */
