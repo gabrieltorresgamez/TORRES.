@@ -230,6 +230,7 @@ A snapshot of the TORRES. design system. TORRES. is edited in its design system 
 | --- | --- |
 | `tokens.json` | Every token: colours in four themes, type, spacing, radii, shadows. The source the rest is built from. |
 | `tokens.css` | The same tokens as CSS variables, one block per theme (`data-theme`: `light`, `dark`, `hc-light`, `hc-dark`), the type styles as classes, and the `@font-face` for the display font. Generated from `tokens.json`. |
+| `DESIGN.md` | The system in the [DESIGN.md format](https://github.com/google-labs-code/design.md) for coding agents: the tokens as YAML front matter (the light theme under plain names, the other themes as `-dark`, `-hc-light` and `-hc-dark`), and the rules as prose. Check it with `npx @google/design.md lint DESIGN.md`. |
 | `components/` | `bundle.js` (the components on `window.Torres`, for React 18), `bundle.css`, `index.d.ts`, and a README and preview for each component. `Cover` and `Slide` are previews only. |
 | `assets/Logos/`, `assets/Icons/` | The three marks and the six icons, as SVG. |
 | `fonts/` | Bricolage Grotesque Variable (woff2), for the web. |
